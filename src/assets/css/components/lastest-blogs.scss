@@ -1,0 +1,98 @@
+.lastest-blogs {
+    padding: 160px 0;
+    @include max-breakpoint(1024) {
+        padding: 80px 0;
+    }
+    @include max-breakpoint(425) {
+        padding: 50px 0 0;
+    }
+    .mg-btm {
+        margin-bottom: 80px;
+        @include max-breakpoint(990) {
+            margin-bottom: 40px;
+        }
+        @include max-breakpoint(425) {
+            margin-bottom: 20px;
+        }
+    }
+    .title {
+        @include max-breakpoint(425) {
+            font-size: 20px;
+            width: 100%;
+        }
+    }
+    &__box {
+        @include max-breakpoint(990) {
+            margin-bottom: 30px;
+        }
+        .txt-center {
+            @include max-breakpoint(425) {
+                text-align: center;
+            }
+        }
+        &-img {
+            position: relative;
+            overflow: hidden;
+            &:hover .img__modal {
+                opacity: 1;
+            }
+            .img__modal {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+                background-color: rgba(0, 0, 0, 0.4);
+                i {
+                    font-size: 30px;
+                    color: #fff;
+                }
+            }
+        }
+        &-content {
+            padding: 40px;
+            background-color: #f7f7f7;
+            @include max-breakpoint(1024) {
+                padding: 30px;
+            }
+            @include max-breakpoint(1024) {
+                padding: 20px;
+            }
+            .content__title {
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 20px;
+                color: #232323;
+            }
+            .content__line {
+                width: 100%;
+                height: 1px;
+                background-color: rgba(0, 0, 0, 0.1);
+                margin: 20px 0;
+                @include max-breakpoint(1024) {
+                    margin: 15px 0;
+                }
+            }
+            .content__author {
+                font-size: 11px;
+                font-weight: 400;
+                color: #939393;
+                font-family: "Roboto";
+                @include max-breakpoint(1024) {
+                    font-size: 12px;
+                }
+                span {
+                    &:hover {
+                        color: #ff214f;
+                    }
+                }
+                &-line {
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}

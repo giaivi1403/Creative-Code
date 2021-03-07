@@ -1,0 +1,82 @@
+.portfolio {
+    padding: 120px 0 0;
+    .title {
+        margin-bottom: 0;
+        @include max-breakpoint(425) {
+            font-size: 20px;
+        }
+    }
+    @include max-breakpoint(1024) {
+        padding: 80px 0;
+    }
+    @include max-breakpoint(425) {
+        padding: 50px 0 0;
+    }
+    &__filter {
+        margin: 100px 7px 0 7px;
+        width: 100%;
+        @include max-breakpoint(1024) {
+            margin: 60px 7px 0 7px;
+        }
+        .portfolio__grid {
+            list-style: none;
+            padding: 0;
+            position: relative;
+            &-item,
+            &-sizer {
+                padding: 5px;
+                width: calc(25% - 10px);
+                @include max-breakpoint(1024) {
+                    width: 33.3%;
+                }
+                @include max-breakpoint(768) {
+                    width: calc(50% - 10px);
+                }
+                @include max-breakpoint(425) {
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
+            &-item {
+                display: inline-block;
+                overflow: hidden;
+                figure {
+                    margin: 0;
+                    transition: all 0.2s ease-in-out 0s;
+                    will-change: transform;
+                    &:hover {
+                        transform: translateY(-100px);
+                    }
+                    &:hover figcaption {
+                        opacity: 1;
+                    }
+                }
+                figcaption {
+                    position: absolute;
+                    height: auto;
+                    right: 0;
+                    left: 0;
+                    bottom: -112px;
+                    transition: all 0.2s ease-in 0s;
+                    opacity: 0;
+                    padding: 32px;
+                }
+                .item__caption {
+                    text-align: center;
+                    h5 {
+                        font-size: 14px;
+                        color: #232323;
+                        font-weight: 600;
+                        margin-bottom: 6px;
+                        text-transform: uppercase;
+                    }
+                    p {
+                        font-size: 11px;
+                        color: #939393;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}

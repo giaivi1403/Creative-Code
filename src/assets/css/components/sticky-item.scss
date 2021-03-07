@@ -1,0 +1,45 @@
+.cart,
+.mail {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    will-change: transform;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    @include max-breakpoint(990) {
+        display: none;
+    }
+    &:hover {
+        transform: translateX(0);
+        background-color: #fc214e;
+    }
+    &:hover a {
+        color: #fff;
+    }
+    a {
+        display: inline-block;
+        font-size: 10px;
+        color: #333;
+        padding: 6px 10px;
+        text-transform: uppercase;
+        transition: unset;
+        line-height: 20px;
+    }
+    i {
+        margin-right: 14px;
+        font-size: 16px;
+        position: relative;
+        top: 3px;
+    }
+}
+
+.cart {
+    top: 15%;
+    transform: translateX(64%);
+}
+
+.mail {
+    top: 21%;
+    transform: translateX(72%);
+}

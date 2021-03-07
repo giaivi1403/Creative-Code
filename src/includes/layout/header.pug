@@ -1,0 +1,355 @@
+.header__navbar
+    .container-fluid
+        .row.align-items-center
+            .col-lg-2.col-xl-2.col-md-8.col-8
+                a(href="#" class="header__navbar-logo")
+                    img(src="../assets/images/logo.png", alt="img")
+            .col-lg-8.col-xl-8.col-md-8.position-unset.tablet-none
+                ul.header__navbar-list
+                    li 
+                        a(href="#") Home
+                        .mega-menu
+                            .container
+                                .row
+                                    - for(let i = 0; i < 4; i++)
+                                        .col-lg-3
+                                            h4.mega-menu__title Classic HomePage
+                                            ul.mega-menu__list.text-left
+                                                - for(let j = 0; j < 8; j++)
+                                                    li.mega-menu__list-item
+                                                        if (j == 5 &&  i == 0) || (j == 2 && i == 2) 
+                                                            a(href="#").active
+                                                                | Classic Corporates 
+                                                                span.item__new New
+                                                        else 
+                                                            a(href="#")
+                                                                    | Classic Corporates
+                    li.dropdown
+                        a(href="#") Pages
+                        ul.dropdown-menu.dropdown-list
+                            li.dropdown-list__item.dropright
+                                a(href="#").d-flex.align-items-center.justify-content-between 
+                                    | About
+                                    <i class="fas fa-angle-right"></i>
+                                ul.dropdown-menu.dropdown-right
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                            li.dropdown-list__item.dropright
+                                a(href="#").d-flex.align-items-center.justify-content-between 
+                                    | Services
+                                    <i class="fas fa-angle-right"></i>
+                                ul.dropdown-menu.dropdown-right
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                            li.dropdown-list__item.dropright
+                                a(href="#").d-flex.align-items-center.justify-content-between 
+                                    | Contact
+                                    <i class="fas fa-angle-right"></i>
+                                ul.dropdown-menu.dropdown-right
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                            li.dropdown-list__item.dropright
+                                a(href="#").d-flex.align-items-center.justify-content-between 
+                                    | Team
+                                    <i class="fas fa-angle-right"></i>
+                                ul.dropdown-menu.dropdown-right
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                            li.dropdown-list__item.dropright
+                                a(href="#").d-flex.align-items-center.justify-content-between 
+                                    | Additional Pages
+                                    <i class="fas fa-angle-right"></i>
+                                ul.dropdown-menu.dropdown-right
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                    li
+                        a(href="#") Portfolio
+                        .mega-menu.tb-scroll
+                            .container
+                                .row
+                                    - for(let i = 0; i < 2; i++)
+                                        .col-lg-3
+                                            h4.mega-menu__title Classic HomePage
+                                            ul.mega-menu__list.text-left.mg-bottom
+                                                - for(let j = 0; j < 4; j++)
+                                                    li.mega-menu__list-item
+                                                        if j == 2
+                                                            a(href="#").active Classic Corporate
+                                                                span.item__new New
+                                                        else
+                                                            a(href="#") Classic Corporate
+                                            h4.mega-menu__title Classic HomePage
+                                            ul.mega-menu__list.text-left.mg-bottom
+                                                - for(let j = 0; j < 2; j++)
+                                                    li.mega-menu__list-item
+                                                        if j == 0
+                                                            a(href="#").active Classic Corporate
+                                                                span.item__new New
+                                                        else
+                                                            a(href="#") Classic Corporate
+                                            h4.mega-menu__title Classic HomePage
+                                            ul.mega-menu__list.text-left.mg-bottom
+                                                - for(let j = 0; j < 4; j++)
+                                                    li.mega-menu__list-item
+                                                        a(href="#") Classic Corporate
+                                            h4.mega-menu__title Classic HomePage
+                                            ul.mega-menu__list.text-left
+                                                - for(let j = 0; j < 4; j++)
+                                                    li.mega-menu__list-item
+                                                        a(href="#") Classic Corporate
+                                    .col-lg-3
+                                        h4.mega-menu__title Classic HomePage
+                                        ul.mega-menu__list.text-left.mg-bottom
+                                            - for(let j = 0; j < 8; j++)
+                                                li.mega-menu__list-item
+                                                    if j == 4
+                                                        a(href="#").active Classic Corporate
+                                                            span.item__new New
+                                                    else
+                                                        a(href="#") Classic Corporate
+                                        h4.mega-menu__title Classic HomePage
+                                        ul.mega-menu__list.text-left.mg-bottom
+                                            - for(let j = 0; j < 4; j++)
+                                                li.mega-menu__list-item
+                                                    a(href="#") Classic Corporate
+                                    .col-lg-3
+                                        ul.mega-menu__list.text-left.mg-bottom
+                                                li.mega-menu__list-item
+                                                    a(href="#").pd-0
+                                                        img(src='http://www.themezaa.com/html/pofo/images/menu-banner-01.png', alt="mega-menu")
+                                        ul.mega-menu__list.text-left.mg-bottom
+                                                li.mega-menu__list-item
+                                                    a(href="#").pd-0
+                                                        img(src='http://www.themezaa.com/html/pofo/images/menu-banner-02.png', alt="mega-menu")
+                    li.dropdown
+                        a(href="#") Blog
+                        ul.dropdown-menu.dropdown-list
+                            li.dropdown-list__item.dropright
+                                a(href="#").d-flex.align-items-center.justify-content-between 
+                                    | Blog Standard
+                                    <i class="fas fa-angle-right"></i>
+                                ul.dropdown-menu.dropdown-right
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                            li.dropdown-list__item.dropright
+                                a(href="#").d-flex.align-items-center.justify-content-between 
+                                    | Blog Classic
+                                    <i class="fas fa-angle-right"></i>
+                                ul.dropdown-menu.dropdown-right
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                            li.dropdown-list__item.dropright
+                                a(href="#").d-flex.align-items-center.justify-content-between 
+                                    | Blog Grid
+                                    <i class="fas fa-angle-right"></i>
+                                ul.dropdown-menu.dropdown-right
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                            li.dropdown-list__item.dropright
+                                a(href="#").d-flex.align-items-center.justify-content-between 
+                                    | Blog List
+                                    <i class="fas fa-angle-right"></i>
+                                ul.dropdown-menu.dropdown-right
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                            li.dropdown-list__item.dropright
+                                a(href="#").d-flex.align-items-center.justify-content-between 
+                                    | Blog Simple
+                                    <i class="fas fa-angle-right"></i>
+                                ul.dropdown-menu.dropdown-right
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                            li.dropdown-list__item.dropright
+                                a(href="#").d-flex.align-items-center.justify-content-between 
+                                    | Blog Mansory
+                                    <i class="fas fa-angle-right"></i>
+                                ul.dropdown-menu.dropdown-right
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                            li.dropdown-list__item.dropright
+                                a(href="#").d-flex.align-items-center.justify-content-between 
+                                    | Blog Clean
+                                    <i class="fas fa-angle-right"></i>
+                                ul.dropdown-menu.dropdown-right
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                            li.dropdown-list__item.dropright
+                                a(href="#").d-flex.align-items-center.justify-content-between 
+                                    | Blog Layout
+                                    <i class="fas fa-angle-right"></i>
+                                ul.dropdown-menu.dropdown-right
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                                    li.dropdown-right__item
+                                        a(href="#") Classic Corporate
+                    li
+                        a(href="#") elements
+                        .mega-menu
+                            .container
+                                .row
+                                    - for(let i = 0; i < 4; i++)
+                                        .col-lg-3
+                                            h4.mega-menu__title Classic HomePage
+                                            ul.mega-menu__list.text-left
+                                                - for(let j = 0; j < 8; j++)
+                                                    li.mega-menu__list-item
+                                                        if (j == 2 && i == 1) || (j == 7 && i == 2)
+                                                            a(href="#").d-flex.align-items-center.item__icon.active
+                                                                if j == 0
+                                                                    <i class="ti-layout-accordion-separated"></i>
+                                                                else if j == 1
+                                                                    <i class="ti-thought"></i>
+                                                                else if j == 2
+                                                                    <i class="ti-mouse"></i>
+                                                                else if j == 3
+                                                                    <i class="ti-user"></i>
+                                                                else if j == 4
+                                                                    <i class="ti-layout-slider-alt"></i>
+                                                                else if j == 5
+                                                                    <i class="ti-layout-slider"></i>
+                                                                else if j == 6
+                                                                    <i class="ti-bookmark"></i>
+                                                                else if j == 7
+                                                                    <i class="ti-headphone-alt"></i>
+                                                                | Classic Corporate
+                                                                span.item__new New
+                                                        else 
+                                                            a(href="#").d-flex.align-items-center.item__icon
+                                                                if j == 0
+                                                                    <i class="ti-layout-accordion-separated"></i>
+                                                                else if j == 1
+                                                                    <i class="ti-thought"></i>
+                                                                else if j == 2
+                                                                    <i class="ti-mouse"></i>
+                                                                else if j == 3
+                                                                    <i class="ti-user"></i>
+                                                                else if j == 4
+                                                                    <i class="ti-layout-slider-alt"></i>
+                                                                else if j == 5
+                                                                    <i class="ti-layout-slider"></i>
+                                                                else if j == 6
+                                                                    <i class="ti-bookmark"></i>
+                                                                else if j == 7
+                                                                    <i class="ti-headphone-alt"></i>
+                                                                | Classic Corporate
+                    li 
+                        a(href="#") features
+                        .mega-menu
+                            .container
+                                .row
+                                    - for(let i = 0; i < 4; i++)
+                                        .col-lg-3
+                                            h4.mega-menu__title Classic HomePage
+                                            ul.mega-menu__list.text-left
+                                                - for(let j = 0; j < 8; j++)
+                                                    li.mega-menu__list-item
+                                                        if (j == 4 && i == 2) || (j == 2 && i == 0)
+                                                            a(href="#").active Classic Corporate
+                                                                span.item__new New
+                                                        else
+                                                            a(href="#") Classic Corporate
+            .col-md-2.col-4.text-right.menu-mobile.position-unset
+                .menu-mobile__btn
+                    a(href="#").menu-mobile__btn-item 
+                        <i class="fas fa-bars"></i>
+                    .menu-mobile__overlay
+                    ul.menu-mobile__list
+                        - for(let i = 0; i < 6; i++)
+                            li.menu-mobile__list-item
+                                a(href="#").item__link
+                                    | Home
+                                    <i class="fas fa-angle-down"></i>
+                                ul.submenu-mobile__list
+                                    - for(let j = 0; j < 8; j++)
+                                        li.submenu-mobile__list-item
+                                            if (j == 5) || (j == 2) 
+                                                a(href="#").active
+                                                    | Classic Corporates 
+                                                    span.item__new New
+                                            else 
+                                                a(href="#")
+                                                    | Classic Corporates                                
+            .col-lg-2.col-xl-2.col-2.mobile-none
+                .header__navbar-icon
+                    a(href="https://www.facebook.com/" title="Facebook" target="_blank") 
+                        i(class="fab fa-facebook-f")
+                    a(href="https://twitter.com/" title="Twitter" target="_blank")
+                        i(class="fab fa-twitter")
+                    a(href="https://dribbble.com/" title="Dribbble" target="_blank")
+                        i(class="fab fa-dribbble")  

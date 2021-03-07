@@ -1,0 +1,17 @@
+.scroll {
+    display: flex;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: rgb(135, 135, 135);
+    z-index: 999;
+    text-decoration: none;
+    &:hover {
+        background-color: #000;
+    }
+    i {
+        color: #fff;
+    }
+}

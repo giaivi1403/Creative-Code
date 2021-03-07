@@ -1,0 +1,46 @@
+#video {
+    background-color: #000;
+}
+
+.modal-dialog {
+    margin: 0 auto;
+    .modal-content {
+        background-color: #000;
+        .modal-header {
+            border: none;
+        }
+        .modal-body {
+            padding: 0;
+            &__if {
+                @include max-breakpoint(1024) {
+                    display: flex;
+                    justify-content: center;
+                    iframe {
+                        width: 700px;
+                        height: 400px;
+                    }
+                }
+                @include max-breakpoint(425) {
+                    iframe {
+                        // wi
+                    }
+                }
+            }
+        }
+    }
+    .close {
+        outline: none;
+        color: #fff;
+        text-shadow: none;
+        opacity: 1;
+        position: absolute;
+        top: 40px;
+        right: 0px;
+        cursor: pointer;
+        z-index: 1;
+        pointer-events: auto;
+        @include max-breakpoint(768) {
+            right: 40px;
+        }
+    }
+}

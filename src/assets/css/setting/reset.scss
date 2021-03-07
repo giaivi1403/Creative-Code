@@ -1,0 +1,144 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+ol,
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    transition: all 0.5s ease-in-out;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+        border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-transform: uppercase;
+    &-red {
+        background-color: #fc214e;
+        border: 1px solid #fc214e;
+        &:hover {
+            background-color: transparent;
+            color: #fc214e;
+        }
+    }
+    &-black {
+        background-color: #232323;
+        border: 2px solid #232323;
+        @include max-breakpoint(990) {
+            padding: 10px 30px;
+        }
+        &:hover {
+            color: #232323;
+            background-color: #fff;
+        }
+    }
+    &-white {
+        background-color: #fff;
+        border: 2px solid #232323;
+        color: #232323;
+        &:hover {
+            color: #fff;
+            background-color: #232323;
+        }
+    }
+}
+
+p {
+    font-size: 14px;
+    color: #6f6f6f;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 24px;
+    @include max-breakpoint(1024) {
+        font-size: 12px;
+    }
+}
+
+.description {
+    font-size: 12px;
+    font-weight: 500;
+    color: #939393;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    @include max-breakpoint(1024) {
+        font-size: 12px;
+        font-family: "Montserrat", sans-serif;
+    }
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #232323;
+    line-height: 40px;
+    @include max-breakpoint(1024) {
+        font-size: 27px;
+    }
+    @include max-breakpoint(990) {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+
+.mobile-none {
+    @include max-breakpoint(700) {
+        display: none;
+    }
+}
+
+.tablet-none {
+    @include max-breakpoint(990) {
+        display: none;
+    }
+}

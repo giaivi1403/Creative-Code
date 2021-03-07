@@ -1,0 +1,112 @@
+.footer {
+    background-color: #1c1c1c;
+    padding: 100px 0;
+    @include max-breakpoint(990) {
+        padding: 60px 0;
+    }
+    @include max-breakpoint(425) {
+        padding: 30px 0;
+    }
+    .txt-center {
+        @include max-breakpoint(425) {
+            text-align: center !important;
+        }
+    }
+    .mg-btm {
+        @include max-breakpoint(425) {
+            margin-bottom: 30px;
+        }
+    }
+    .jst-center {
+        @include max-breakpoint(425) {
+            justify-content: center !important;
+        }
+        li {
+            a {
+                margin: 0 10px;
+            }
+        }
+    }
+    .pd-btm {
+        padding-bottom: 80px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        @include max-breakpoint(990) {
+            padding-bottom: 40px;
+        }
+    }
+    .pd-top {
+        padding-top: 80px;
+        @include max-breakpoint(990) {
+            padding-top: 40px;
+        }
+    }
+    .mg-btm {
+        @include max-breakpoint(990) {
+            margin-bottom: 30px;
+        }
+    }
+    &__content {
+        .title {
+            color: #fff;
+            font-family: "Roboto";
+            font-weight: 400;
+        }
+        span {
+            font-size: 16px;
+            font-family: "Roboto";
+            font-weight: 400;
+            color: #6f6f6f;
+        }
+    }
+    &__btn {
+        a {
+            border-radius: 0;
+            border: 2px solid #fff;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+    }
+    &__img {
+        img {
+            width: 105px;
+            height: 26px;
+        }
+    }
+    &__text {
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: "Roboto";
+            color: #6f6f6f;
+            line-height: 23px;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        a {
+            text-decoration: none;
+            &:hover {
+                span {
+                    color: #ff214f;
+                }
+            }
+        }
+    }
+    &__icon {
+        li {
+            a {
+                text-decoration: none;
+                i {
+                    font-size: 16px;
+                    color: #fff;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                }
+                &:hover {
+                    i {
+                        color: #ff214f;
+                    }
+                }
+            }
+        }
+    }
+}

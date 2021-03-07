@@ -1,0 +1,98 @@
+.service {
+    background-color: #fff;
+    padding: 120px 0;
+    @include max-breakpoint(1024) {
+        padding: 80px 0;
+    }
+    @include max-breakpoint(425) {
+        padding: 50px 0;
+    }
+    .mg-btm {
+        margin-bottom: 100px;
+        @include max-breakpoint(425) {
+            margin-bottom: 50px;
+        }
+    }
+    .txt-center {
+        @include max-breakpoint(990) {
+            text-align: center;
+        }
+    }
+    .title {
+        font-size: 40px;
+        width: 80%;
+        margin-bottom: 30px;
+        @include max-breakpoint(1090) {
+            width: 100%;
+            font-size: 35px;
+        }
+        @include max-breakpoint(990) {
+            font-size: 30px;
+            width: 70%;
+            margin: 0 auto 30px;
+        }
+        @include max-breakpoint(425) {
+            font-size: 24px;
+            width: 100%;
+        }
+    }
+    &__content {
+        font-size: 14px;
+        font-weight: 400;
+        color: #6f6f6f;
+        font-family: "Roboto";
+        width: 70%;
+        @include max-breakpoint(1090) {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        @include max-breakpoint(990) {
+            width: 70%;
+            margin: 0 auto 20px;
+        }
+        @include max-breakpoint(425) {
+            font-size: 12px;
+            width: 100%;
+        }
+    }
+    &__box {
+        background-color: #f7f7f7;
+        border-radius: 10px;
+        padding: 50px 30px;
+        transition: all 0.2s ease-in-out;
+        margin-bottom: 30px;
+        &.tf-Y {
+            transform: translateY(-40px);
+            @include max-breakpoint(425) {
+                transform: translateY(0);
+            }
+        }
+        &:hover {
+            background-color: #ff214f;
+            svg {
+                fill: #fff;
+            }
+            p {
+                color: #fff;
+                opacity: 0.5;
+            }
+        }
+        &:hover &-title {
+            color: #fff;
+        }
+        svg {
+            width: 50px;
+            height: 50px;
+            fill: #ff214f;
+        }
+        &-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin: 30px 0 20px;
+            color: #232323;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

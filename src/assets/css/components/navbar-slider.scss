@@ -1,0 +1,106 @@
+.navbar-slider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    &__item {
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+    }
+    .slider {
+        height: 100%;
+    }
+    .owl-stage-outer,
+    .owl-stage,
+    .owl-item,
+    .navbar-slider__item {
+        height: 100%;
+        color: #fff;
+        h2 {
+            font-size: 100px;
+            font-weight: 700;
+            margin: 0 190px;
+            line-height: 92px;
+            width: 60%;
+            @include max-breakpoint(990) {
+                font-size: 70px;
+                line-height: 70px;
+            }
+            @include max-breakpoint(425) {
+                width: 80%;
+                font-size: 38px;
+                line-height: 42px;
+            }
+        }
+        h6 {
+            font-size: 22px;
+            font-weight: 300;
+            margin: 20px 0 40px;
+            font-family: "Roboto";
+            opacity: 0.6;
+            @include max-breakpoint(425) {
+                font-size: 18px;
+                width: 70%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .owl-nav {
+        color: #fff;
+        .owl-prev,
+        .owl-next {
+            position: absolute;
+            top: 50%;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            outline: none;
+            i {
+                font-size: 30px;
+                transform: translateY(-50%);
+            }
+        }
+        .owl-prev {
+            left: 20px;
+            @include max-breakpoint(425) {
+                left: 0px;
+            }
+        }
+        .owl-next {
+            right: 20px;
+            @include max-breakpoint(425) {
+                right: 05px;
+            }
+        }
+    }
+    &__scrdown {
+        position: absolute;
+        bottom: 50px;
+        right: 50%;
+        transform: translateX(50%);
+        z-index: 10;
+        a {
+            color: #fff;
+            font-size: 12px;
+            line-height: 20px;
+            opacity: 0.5;
+            text-transform: uppercase;
+            @include max-breakpoint(425) {
+                font-size: 14px;
+            }
+        }
+        &-line {
+            position: absolute;
+            top: 120%;
+            right: 50%;
+            height: 100px;
+            width: 1px;
+            background-color: #fc214e;
+            margin: 0 auto;
+            @include max-breakpoint(425) {
+                height: 80px;
+                top: 150%;
+            }
+        }
+    }
+}
